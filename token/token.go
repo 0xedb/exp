@@ -28,3 +28,8 @@ const (
 	FUNCTION = "fn"
 	VAR      = "var"
 )
+
+type Token struct {
+	Type    string
+	Literal string
+}
