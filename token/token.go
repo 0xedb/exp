@@ -16,7 +16,7 @@ const (
 	PLUS   = "+"
 
 	// DELIMITERS
-	COMMA      = ","
+	COMMA     = ","
 	SEMICOLON = ";"
 
 	LPAREN = "("
@@ -28,6 +28,19 @@ const (
 	FUNCTION = "fn"
 	VAR      = "var"
 )
+
+var kewywords = map[string]string{
+	"fn":  "fn",
+	"var": "var",
+}
+
+func LookUpIdentifier(id string) string {
+	if tok, ok := kewywords[id]; ok {
+		return tok
+	}
+
+	return IDENT
+}
 
 type Token struct {
 	Type    string
