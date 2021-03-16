@@ -1,6 +1,7 @@
 # exp is a programming language
 
-### supports 
+## supports
+
     - C-like syntax
     - variable bindings
     - integers & booleans
@@ -11,4 +12,3 @@
     - string data structure
     - array data structure
     - hash data structure
-
